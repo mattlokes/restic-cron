@@ -1,3 +1,5 @@
+[![Publish Docker image](https://github.com/mattlokes/restic-cron/actions/workflows/publish-docker-image.yaml/badge.svg)](https://github.com/mattlokes/restic-cron/actions/workflows/publish-docker-image.yaml) [![Docker Pulls](https://img.shields.io/docker/pulls/mattlokes/restic-cron.svg?maxAge=604800)](https://hub.docker.com/r/mattlokes/restic-cron/)
+
 # restic-cron
 
 Docker image to do Restic backups of a specific directory on a crontab schedule
