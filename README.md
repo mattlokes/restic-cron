@@ -35,7 +35,7 @@ services:
     environment:
       ARG_BACKUP_HOSTNAME : ratchet
       ARG_BACKUP_DIR      : /srv/docker
-      ARG_BACKUP_URL      : rest:https://<auth_user>:<auth_password>@127.0.0.1
-      ARG_BACKUP_PASSWD   : <repo_password>
+      ARG_BACKUP_REPO     : rest:https://matt:blahblah1234@127.0.0.1
+      ARG_BACKUP_PASSWD   : helloworld
       ARG_BACKUP_CRONTAB  : '0 2 * * *' # 2am everyday
 ```
