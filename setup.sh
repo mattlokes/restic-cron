@@ -27,7 +27,7 @@ echo "/bin/restic $ARG_BACKUP_HOSTNAME_OPT -p passwd.f -r $ARG_BACKUP_REPO --ver
 chmod +x job.sh
 
 # Create crontab file and load
-echo "$ARG_BACKUP_CRONTAB job.sh | tee -a /var/log/cron.log" > crontab.f
+echo "$ARG_BACKUP_CRONTAB /usr/scheduler/job.sh | tee -a /var/log/cron.log" > crontab.f
 
 # Start cron
 echo "Starting restic-cron..."
