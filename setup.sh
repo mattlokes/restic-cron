@@ -23,7 +23,7 @@ echo "$ARG_BACKUP_PASSWD" > passwd.f
 
 # Create job.sh
 echo '#!/bin/bash' > job.sh
-echo "/bin/restic $ARG_BACKUP_HOSTNAME_OPT -p passwd.f -r $ARG_BACKUP_REPO --verbose backup $ARG_BACKUP_DIR" >> job.sh
+echo "/bin/restic $ARG_BACKUP_HOSTNAME_OPT -p /usr/scheduler/passwd.f -r $ARG_BACKUP_REPO --verbose backup $ARG_BACKUP_DIR" >> job.sh
 chmod +x job.sh
 
 # Create crontab file and load
